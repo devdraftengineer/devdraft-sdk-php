@@ -1,6 +1,6 @@
 {
-    "name": "devdraftai/sdk",
-    "description": "",
+    "name": "devdraft/sdk",
+    "description": "DevDraft AI SDK",
     "keywords": [
         "swagger",
         "php",
