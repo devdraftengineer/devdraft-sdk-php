@@ -34,5 +34,11 @@
     },
     "autoload-dev": {
         "psr-4": { "DevdraftSDK\\" : "test/" }
-    }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/devdraftengineer/devdraft-sdk-php"
+        }
+    ]
 }
