@@ -25,11 +25,19 @@
  * Please update the test case below to test the endpoint.
  */
 
-namespace DevDraftAISDK;
+namespace DevdraftSDK\Test\Api;
 
-use DevDraftAISDK\Configuration;
-use DevDraftAISDK\ApiException;
-use DevDraftAISDK\ObjectSerializer;
+use GuzzleHttp\Client;
+use GuzzleHttp\ClientInterface;
+use GuzzleHttp\Exception\RequestException;
+use GuzzleHttp\Psr7\MultipartStream;
+use GuzzleHttp\Psr7\Request;
+use GuzzleHttp\RequestOptions;
+use DevdraftSDK\Api\APIHealthApi;
+use DevdraftSDK\ApiException;
+use DevdraftSDK\Configuration;
+use DevdraftSDK\HeaderSelector;
+use DevdraftSDK\ObjectSerializer;
 use PHPUnit\Framework\TestCase;
 
 /**

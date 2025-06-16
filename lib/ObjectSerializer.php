@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace DevDraftAISDK;
+namespace DevdraftSDK;
 
 /**
  * ObjectSerializer Class Doc Comment

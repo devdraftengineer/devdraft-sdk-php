@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  DevDraftAISDK
+ * @package  DevdraftSDK
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace DevDraftAISDK\Api;
+namespace DevdraftSDK\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use DevDraftAISDK\ApiException;
-use DevDraftAISDK\Configuration;
-use DevDraftAISDK\HeaderSelector;
-use DevDraftAISDK\ObjectSerializer;
+use DevdraftSDK\ApiException;
+use DevdraftSDK\Configuration;
+use DevdraftSDK\HeaderSelector;
+use DevdraftSDK\ObjectSerializer;
 
 /**
  * AppBalancesApi Class Doc Comment
  *
  * @category Class
- * @package  DevDraftAISDK
+ * @package  DevdraftSDK
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -92,9 +92,9 @@ class AppBalancesApi
      * Get all stablecoin balances for an app
      *
      *
-     * @throws \DevDraftAISDK\ApiException on non-2xx response
+     * @throws \DevdraftSDK\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \DevDraftAISDK\Model\AllBalancesResponse
+     * @return \DevdraftSDK\Model\AllBalancesResponse
      */
     public function balanceControllerGetAllBalances()
     {
@@ -108,13 +108,13 @@ class AppBalancesApi
      * Get all stablecoin balances for an app
      *
      *
-     * @throws \DevDraftAISDK\ApiException on non-2xx response
+     * @throws \DevdraftSDK\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \DevDraftAISDK\Model\AllBalancesResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \DevdraftSDK\Model\AllBalancesResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function balanceControllerGetAllBalancesWithHttpInfo()
     {
-        $returnType = '\DevDraftAISDK\Model\AllBalancesResponse';
+        $returnType = '\DevdraftSDK\Model\AllBalancesResponse';
         $request = $this->balanceControllerGetAllBalancesRequest();
 
         try {
@@ -166,7 +166,7 @@ class AppBalancesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\DevDraftAISDK\Model\AllBalancesResponse',
+                        '\DevdraftSDK\Model\AllBalancesResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -206,7 +206,7 @@ class AppBalancesApi
      */
     public function balanceControllerGetAllBalancesAsyncWithHttpInfo()
     {
-        $returnType = '\DevDraftAISDK\Model\AllBalancesResponse';
+        $returnType = '\DevdraftSDK\Model\AllBalancesResponse';
         $request = $this->balanceControllerGetAllBalancesRequest();
 
         return $this->client
@@ -345,9 +345,9 @@ class AppBalancesApi
      * Get EURC balance for an app
      *
      *
-     * @throws \DevDraftAISDK\ApiException on non-2xx response
+     * @throws \DevdraftSDK\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \DevDraftAISDK\Model\AggregatedBalanceResponse
+     * @return \DevdraftSDK\Model\AggregatedBalanceResponse
      */
     public function balanceControllerGetEURCBalance()
     {
@@ -361,13 +361,13 @@ class AppBalancesApi
      * Get EURC balance for an app
      *
      *
-     * @throws \DevDraftAISDK\ApiException on non-2xx response
+     * @throws \DevdraftSDK\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \DevDraftAISDK\Model\AggregatedBalanceResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \DevdraftSDK\Model\AggregatedBalanceResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function balanceControllerGetEURCBalanceWithHttpInfo()
     {
-        $returnType = '\DevDraftAISDK\Model\AggregatedBalanceResponse';
+        $returnType = '\DevdraftSDK\Model\AggregatedBalanceResponse';
         $request = $this->balanceControllerGetEURCBalanceRequest();
 
         try {
@@ -419,7 +419,7 @@ class AppBalancesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\DevDraftAISDK\Model\AggregatedBalanceResponse',
+                        '\DevdraftSDK\Model\AggregatedBalanceResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -459,7 +459,7 @@ class AppBalancesApi
      */
     public function balanceControllerGetEURCBalanceAsyncWithHttpInfo()
     {
-        $returnType = '\DevDraftAISDK\Model\AggregatedBalanceResponse';
+        $returnType = '\DevdraftSDK\Model\AggregatedBalanceResponse';
         $request = $this->balanceControllerGetEURCBalanceRequest();
 
         return $this->client
@@ -598,9 +598,9 @@ class AppBalancesApi
      * Get USDC balance for an app
      *
      *
-     * @throws \DevDraftAISDK\ApiException on non-2xx response
+     * @throws \DevdraftSDK\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \DevDraftAISDK\Model\AggregatedBalanceResponse
+     * @return \DevdraftSDK\Model\AggregatedBalanceResponse
      */
     public function balanceControllerGetUSDCBalance()
     {
@@ -614,13 +614,13 @@ class AppBalancesApi
      * Get USDC balance for an app
      *
      *
-     * @throws \DevDraftAISDK\ApiException on non-2xx response
+     * @throws \DevdraftSDK\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \DevDraftAISDK\Model\AggregatedBalanceResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \DevdraftSDK\Model\AggregatedBalanceResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function balanceControllerGetUSDCBalanceWithHttpInfo()
     {
-        $returnType = '\DevDraftAISDK\Model\AggregatedBalanceResponse';
+        $returnType = '\DevdraftSDK\Model\AggregatedBalanceResponse';
         $request = $this->balanceControllerGetUSDCBalanceRequest();
 
         try {
@@ -672,7 +672,7 @@ class AppBalancesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\DevDraftAISDK\Model\AggregatedBalanceResponse',
+                        '\DevdraftSDK\Model\AggregatedBalanceResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -712,7 +712,7 @@ class AppBalancesApi
      */
     public function balanceControllerGetUSDCBalanceAsyncWithHttpInfo()
     {
-        $returnType = '\DevDraftAISDK\Model\AggregatedBalanceResponse';
+        $returnType = '\DevdraftSDK\Model\AggregatedBalanceResponse';
         $request = $this->balanceControllerGetUSDCBalanceRequest();
 
         return $this->client

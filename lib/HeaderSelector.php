@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace DevDraftAISDK;
+namespace DevdraftSDK;
 
 use \Exception;
 

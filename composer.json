@@ -1,6 +1,6 @@
 {
     "name": "devdraft/sdk",
-    "description": "DevDraft AI SDK",
+    "description": "Devdraft SDK - A comprehensive payment processing and business management API",
     "keywords": [
         "swagger",
         "php",
@@ -8,12 +8,12 @@
         "rest",
         "api"
     ],
-    "homepage": "http://swagger.io",
+    "homepage": "https://github.com/devdraftengineer/devdraft-sdk-php",
     "license": "proprietary",
     "authors": [
         {
-            "name": "Swagger and contributors",
-            "homepage": "https://github.com/swagger-api/swagger-codegen"
+            "name": "Devdraft",
+            "homepage": "https://github.com/devdraftengineer/devdraft-sdk-php"
         }
     ],
     "require": {
@@ -29,9 +29,9 @@
         "friendsofphp/php-cs-fixer": "^3.5"
     },
     "autoload": {
-        "psr-4": { "DevDraftAISDK\\" : "lib/" }
+        "psr-4": { "DevdraftSDK\\" : "lib/" }
     },
     "autoload-dev": {
-        "psr-4": { "DevDraftAISDK\\" : "test/" }
+        "psr-4": { "DevdraftSDK\\" : "test/" }
     }
 }

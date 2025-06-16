@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace DevDraftAISDK\Model;
+namespace DevdraftSDK\Model;
 
 /**
  * Interface abstracting model access.

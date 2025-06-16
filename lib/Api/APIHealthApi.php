@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace DevDraftAISDK\Api;
+namespace DevdraftSDK\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,10 +33,10 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use DevDraftAISDK\ApiException;
-use DevDraftAISDK\Configuration;
-use DevDraftAISDK\HeaderSelector;
-use DevDraftAISDK\ObjectSerializer;
+use DevdraftSDK\ApiException;
+use DevdraftSDK\Configuration;
+use DevdraftSDK\HeaderSelector;
+use DevdraftSDK\ObjectSerializer;
 
 /**
  * APIHealthApi Class Doc Comment

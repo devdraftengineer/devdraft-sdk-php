@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  DevDraftAISDK
+ * @package  DevdraftSDK
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace DevDraftAISDK\Api;
+namespace DevdraftSDK\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use DevDraftAISDK\ApiException;
-use DevDraftAISDK\Configuration;
-use DevDraftAISDK\HeaderSelector;
-use DevDraftAISDK\ObjectSerializer;
+use DevdraftSDK\ApiException;
+use DevdraftSDK\Configuration;
+use DevdraftSDK\HeaderSelector;
+use DevdraftSDK\ObjectSerializer;
 
 /**
  * CustomersApi Class Doc Comment
  *
  * @category Class
- * @package  DevDraftAISDK
+ * @package  DevdraftSDK
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -91,9 +91,9 @@ class CustomersApi
      *
      * Create a new customer
      *
-     * @param  \DevDraftAISDK\Model\CreateCustomerDto $body Customer creation data (required)
+     * @param  \DevdraftSDK\Model\CreateCustomerDto $body Customer creation data (required)
      *
-     * @throws \DevDraftAISDK\ApiException on non-2xx response
+     * @throws \DevdraftSDK\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -107,9 +107,9 @@ class CustomersApi
      *
      * Create a new customer
      *
-     * @param  \DevDraftAISDK\Model\CreateCustomerDto $body Customer creation data (required)
+     * @param  \DevdraftSDK\Model\CreateCustomerDto $body Customer creation data (required)
      *
-     * @throws \DevDraftAISDK\ApiException on non-2xx response
+     * @throws \DevdraftSDK\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -160,7 +160,7 @@ class CustomersApi
      *
      * Create a new customer
      *
-     * @param  \DevDraftAISDK\Model\CreateCustomerDto $body Customer creation data (required)
+     * @param  \DevdraftSDK\Model\CreateCustomerDto $body Customer creation data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -180,7 +180,7 @@ class CustomersApi
      *
      * Create a new customer
      *
-     * @param  \DevDraftAISDK\Model\CreateCustomerDto $body Customer creation data (required)
+     * @param  \DevdraftSDK\Model\CreateCustomerDto $body Customer creation data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -216,7 +216,7 @@ class CustomersApi
     /**
      * Create request for operation 'customerControllerCreate'
      *
-     * @param  \DevDraftAISDK\Model\CreateCustomerDto $body Customer creation data (required)
+     * @param  \DevdraftSDK\Model\CreateCustomerDto $body Customer creation data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -327,7 +327,7 @@ class CustomersApi
      * @param  float $take Number of records to take (optional)
      * @param  float $skip Number of records to skip (optional)
      *
-     * @throws \DevDraftAISDK\ApiException on non-2xx response
+     * @throws \DevdraftSDK\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -347,7 +347,7 @@ class CustomersApi
      * @param  float $take Number of records to take (optional)
      * @param  float $skip Number of records to skip (optional)
      *
-     * @throws \DevDraftAISDK\ApiException on non-2xx response
+     * @throws \DevdraftSDK\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -584,7 +584,7 @@ class CustomersApi
      *
      * @param  string $id id (required)
      *
-     * @throws \DevDraftAISDK\ApiException on non-2xx response
+     * @throws \DevdraftSDK\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -600,7 +600,7 @@ class CustomersApi
      *
      * @param  string $id (required)
      *
-     * @throws \DevDraftAISDK\ApiException on non-2xx response
+     * @throws \DevdraftSDK\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -817,10 +817,10 @@ class CustomersApi
      *
      * Update a customer
      *
-     * @param  \DevDraftAISDK\Model\UpdateCustomerDto $body Customer update data (required)
+     * @param  \DevdraftSDK\Model\UpdateCustomerDto $body Customer update data (required)
      * @param  string $id id (required)
      *
-     * @throws \DevDraftAISDK\ApiException on non-2xx response
+     * @throws \DevdraftSDK\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -834,10 +834,10 @@ class CustomersApi
      *
      * Update a customer
      *
-     * @param  \DevDraftAISDK\Model\UpdateCustomerDto $body Customer update data (required)
+     * @param  \DevdraftSDK\Model\UpdateCustomerDto $body Customer update data (required)
      * @param  string $id (required)
      *
-     * @throws \DevDraftAISDK\ApiException on non-2xx response
+     * @throws \DevdraftSDK\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -888,7 +888,7 @@ class CustomersApi
      *
      * Update a customer
      *
-     * @param  \DevDraftAISDK\Model\UpdateCustomerDto $body Customer update data (required)
+     * @param  \DevdraftSDK\Model\UpdateCustomerDto $body Customer update data (required)
      * @param  string $id (required)
      *
      * @throws \InvalidArgumentException
@@ -909,7 +909,7 @@ class CustomersApi
      *
      * Update a customer
      *
-     * @param  \DevDraftAISDK\Model\UpdateCustomerDto $body Customer update data (required)
+     * @param  \DevdraftSDK\Model\UpdateCustomerDto $body Customer update data (required)
      * @param  string $id (required)
      *
      * @throws \InvalidArgumentException
@@ -946,7 +946,7 @@ class CustomersApi
     /**
      * Create request for operation 'customerControllerUpdate'
      *
-     * @param  \DevDraftAISDK\Model\UpdateCustomerDto $body Customer update data (required)
+     * @param  \DevdraftSDK\Model\UpdateCustomerDto $body Customer update data (required)
      * @param  string $id (required)
      *
      * @throws \InvalidArgumentException

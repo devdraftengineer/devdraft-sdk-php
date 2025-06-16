@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  DevDraftAISDK
+ * @package  DevdraftSDK
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace DevDraftAISDK\Api;
+namespace DevdraftSDK\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use DevDraftAISDK\ApiException;
-use DevDraftAISDK\Configuration;
-use DevDraftAISDK\HeaderSelector;
-use DevDraftAISDK\ObjectSerializer;
+use DevdraftSDK\ApiException;
+use DevdraftSDK\Configuration;
+use DevdraftSDK\HeaderSelector;
+use DevdraftSDK\ObjectSerializer;
 
 /**
  * ExchangeRatesApi Class Doc Comment
  *
  * @category Class
- * @package  DevDraftAISDK
+ * @package  DevdraftSDK
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -92,9 +92,9 @@ class ExchangeRatesApi
      * Get EUR to USD exchange rate
      *
      *
-     * @throws \DevDraftAISDK\ApiException on non-2xx response
+     * @throws \DevdraftSDK\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \DevDraftAISDK\Model\ExchangeRateResponseDto
+     * @return \DevdraftSDK\Model\ExchangeRateResponseDto
      */
     public function exchangeRateControllerGetEURToUSDRate()
     {
@@ -108,13 +108,13 @@ class ExchangeRatesApi
      * Get EUR to USD exchange rate
      *
      *
-     * @throws \DevDraftAISDK\ApiException on non-2xx response
+     * @throws \DevdraftSDK\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \DevDraftAISDK\Model\ExchangeRateResponseDto, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \DevdraftSDK\Model\ExchangeRateResponseDto, HTTP status code, HTTP response headers (array of strings)
      */
     public function exchangeRateControllerGetEURToUSDRateWithHttpInfo()
     {
-        $returnType = '\DevDraftAISDK\Model\ExchangeRateResponseDto';
+        $returnType = '\DevdraftSDK\Model\ExchangeRateResponseDto';
         $request = $this->exchangeRateControllerGetEURToUSDRateRequest();
 
         try {
@@ -166,7 +166,7 @@ class ExchangeRatesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\DevDraftAISDK\Model\ExchangeRateResponseDto',
+                        '\DevdraftSDK\Model\ExchangeRateResponseDto',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -206,7 +206,7 @@ class ExchangeRatesApi
      */
     public function exchangeRateControllerGetEURToUSDRateAsyncWithHttpInfo()
     {
-        $returnType = '\DevDraftAISDK\Model\ExchangeRateResponseDto';
+        $returnType = '\DevdraftSDK\Model\ExchangeRateResponseDto';
         $request = $this->exchangeRateControllerGetEURToUSDRateRequest();
 
         return $this->client
@@ -347,9 +347,9 @@ class ExchangeRatesApi
      * @param  string $from Source currency code (e.g., usd) (required)
      * @param  string $to Target currency code (e.g., eur) (required)
      *
-     * @throws \DevDraftAISDK\ApiException on non-2xx response
+     * @throws \DevdraftSDK\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \DevDraftAISDK\Model\ExchangeRateResponseDto
+     * @return \DevdraftSDK\Model\ExchangeRateResponseDto
      */
     public function exchangeRateControllerGetExchangeRate($from, $to)
     {
@@ -365,13 +365,13 @@ class ExchangeRatesApi
      * @param  string $from Source currency code (e.g., usd) (required)
      * @param  string $to Target currency code (e.g., eur) (required)
      *
-     * @throws \DevDraftAISDK\ApiException on non-2xx response
+     * @throws \DevdraftSDK\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \DevDraftAISDK\Model\ExchangeRateResponseDto, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \DevdraftSDK\Model\ExchangeRateResponseDto, HTTP status code, HTTP response headers (array of strings)
      */
     public function exchangeRateControllerGetExchangeRateWithHttpInfo($from, $to)
     {
-        $returnType = '\DevDraftAISDK\Model\ExchangeRateResponseDto';
+        $returnType = '\DevdraftSDK\Model\ExchangeRateResponseDto';
         $request = $this->exchangeRateControllerGetExchangeRateRequest($from, $to);
 
         try {
@@ -423,7 +423,7 @@ class ExchangeRatesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\DevDraftAISDK\Model\ExchangeRateResponseDto',
+                        '\DevdraftSDK\Model\ExchangeRateResponseDto',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -467,7 +467,7 @@ class ExchangeRatesApi
      */
     public function exchangeRateControllerGetExchangeRateAsyncWithHttpInfo($from, $to)
     {
-        $returnType = '\DevDraftAISDK\Model\ExchangeRateResponseDto';
+        $returnType = '\DevdraftSDK\Model\ExchangeRateResponseDto';
         $request = $this->exchangeRateControllerGetExchangeRateRequest($from, $to);
 
         return $this->client
@@ -628,9 +628,9 @@ class ExchangeRatesApi
      * Get USD to EUR exchange rate
      *
      *
-     * @throws \DevDraftAISDK\ApiException on non-2xx response
+     * @throws \DevdraftSDK\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \DevDraftAISDK\Model\ExchangeRateResponseDto
+     * @return \DevdraftSDK\Model\ExchangeRateResponseDto
      */
     public function exchangeRateControllerGetUSDToEURRate()
     {
@@ -644,13 +644,13 @@ class ExchangeRatesApi
      * Get USD to EUR exchange rate
      *
      *
-     * @throws \DevDraftAISDK\ApiException on non-2xx response
+     * @throws \DevdraftSDK\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \DevDraftAISDK\Model\ExchangeRateResponseDto, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \DevdraftSDK\Model\ExchangeRateResponseDto, HTTP status code, HTTP response headers (array of strings)
      */
     public function exchangeRateControllerGetUSDToEURRateWithHttpInfo()
     {
-        $returnType = '\DevDraftAISDK\Model\ExchangeRateResponseDto';
+        $returnType = '\DevdraftSDK\Model\ExchangeRateResponseDto';
         $request = $this->exchangeRateControllerGetUSDToEURRateRequest();
 
         try {
@@ -702,7 +702,7 @@ class ExchangeRatesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\DevDraftAISDK\Model\ExchangeRateResponseDto',
+                        '\DevdraftSDK\Model\ExchangeRateResponseDto',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -742,7 +742,7 @@ class ExchangeRatesApi
      */
     public function exchangeRateControllerGetUSDToEURRateAsyncWithHttpInfo()
     {
-        $returnType = '\DevDraftAISDK\Model\ExchangeRateResponseDto';
+        $returnType = '\DevdraftSDK\Model\ExchangeRateResponseDto';
         $request = $this->exchangeRateControllerGetUSDToEURRateRequest();
 
         return $this->client
