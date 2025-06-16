@@ -1,6 +1,7 @@
 {
     "name": "devdraft/sdk",
     "description": "Devdraft SDK - A comprehensive payment processing and business management API",
+    "version": "1.0.1",
     "keywords": [
         "swagger",
         "php",
